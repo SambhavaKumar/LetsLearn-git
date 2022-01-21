@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h3>JavaScript Array.map()</h3>
+<p>Creates a new array by performing a function on each array element.</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	const numbers1=[64,34,45,67,23,27];
+	const numbers2=numbers1.map(myFun);
+
+	document.getElementById("demo").innerHTML=numbers2;
+	function myFun(value, index, array) {
+		return value*2;
+	}
+</script>
+</body>
+</html>

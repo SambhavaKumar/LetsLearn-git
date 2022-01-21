@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h3>JavaScript Array.filter()</h3>
+<p>Creates a new array with all array elements that passes a test.</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	const numbers=[45, 4, 9, 42, 22];
+	const over18=numbers.filter(myFun);
+
+	document.getElementById("demo").innerHTML=over18;
+	function myFun(value, index, array){
+		return value > 22;
+	}
+</script>
+</body>
+</html>
